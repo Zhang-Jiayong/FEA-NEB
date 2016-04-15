@@ -1,2 +1,2 @@
 # FEA-NEB
-Free End Adaptive Nudged Elastic Band method for locating transition state
+Free-end adaptive nudged elastic band method for locating transition states in minimum energy path calculation
