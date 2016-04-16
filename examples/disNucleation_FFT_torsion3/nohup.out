@@ -1,0 +1,955 @@
+LAMMPS (15 May 2015)
+Running on 9 partitions of processors
+Setting up regular NEB ...
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+0  3.4362943926273e+00  2.1522321338880e-01  1.0112282360290e-02  6.6546138627350e-02  3.1327964403742e+00  2.7896615727805e+00  5.7097984469001e+00  1.9715082482154e+01  0.0000000000000e+00 -1.2988727668341e+05  1.2500000000000e-01 -1.2988661765814e+05  2.5000000000000e-01 -1.2988535190692e+05  3.7500000000000e-01 -1.2988448702183e+05  5.0000000000000e-01 -1.2988464706990e+05  6.2500000000000e-01 -1.2988586732334e+05  7.5000000000000e-01 -1.2988770023834e+05  8.7500000000000e-01 -1.2988942397716e+05  1.0000000000000e+00 -1.2989019682028e+05 
+100  2.4056580253650e-01  2.7421066271223e-02  1.9954565512778e-03  1.8595237812229e-03  2.6831815254642e-01  4.6935655365814e-01  3.3897207468108e+00  2.2392086247530e+01  0.0000000000000e+00 -1.2988727673676e+05  1.2256462917327e-01 -1.2988704659719e+05  2.4644265894297e-01 -1.2988680738021e+05  3.7256482791226e-01 -1.2988748041660e+05  5.0007441459946e-01 -1.2988839333396e+05  6.2714904652263e-01 -1.2988919982973e+05  7.5285520149996e-01 -1.2988977292063e+05  8.7697373405227e-01 -1.2989009538429e+05  1.0000000000000e+00 -1.2989019710096e+05 
+200  1.0180432969680e-01  1.0581594085139e-02  1.5583285265562e-03  1.3361547614938e-03  2.1226324345400e-01  2.4816728306178e-01  3.1685249775910e+00  2.4139690395919e+01  0.0000000000000e+00 -1.2988727676774e+05  1.2518919330973e-01 -1.2988702860046e+05  2.5057750215297e-01 -1.2988711049289e+05  3.7672156869606e-01 -1.2988774816927e+05  5.0277675453713e-01 -1.2988852269136e+05  6.2810760812516e-01 -1.2988925880905e+05  7.5263460905574e-01 -1.2988980903599e+05  8.7653283460390e-01 -1.2989010890085e+05  1.0000000000000e+00 -1.2989019712544e+05 
+203  9.9986443354179e-02  1.0377060601098e-02  1.5520233453118e-03  1.3293958906285e-03  2.1159731545571e-01  2.4776114027190e-01  3.1681187028007e+00  2.4170207093947e+01  0.0000000000000e+00 -1.2988727676830e+05  1.2526264777067e-01 -1.2988702900716e+05  2.5068839565087e-01 -1.2988711250167e+05  3.7681305585202e-01 -1.2988775039018e+05  5.0283340321871e-01 -1.2988852371446e+05  6.2813363617745e-01 -1.2988925918402e+05  7.5264041017380e-01 -1.2988980943613e+05  8.7653136517109e-01 -1.2989010909969e+05  1.0000000000000e+00 -1.2989019712586e+05 
+Setting up climbing ...
+Climbing replica = 2
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+203  2.1159731545571e-01  2.7487009249356e-02  1.5520233453118e-03  1.3293958906285e-03  2.1159731545571e-01  2.4776114027190e-01  3.1681187028007e+00  2.4170207093947e+01  0.0000000000000e+00 -1.2988727676830e+05  1.2526264777067e-01 -1.2988702900716e+05  2.5068839565087e-01 -1.2988711250167e+05  3.7681305585202e-01 -1.2988775039018e+05  5.0283340321871e-01 -1.2988852371446e+05  6.2813363617745e-01 -1.2988925918402e+05  7.5264041017380e-01 -1.2988980943613e+05  8.7653136517109e-01 -1.2989010909969e+05  1.0000000000000e+00 -1.2989019712586e+05 
+succeed!
+press any key to continue ...
+nStep = 203
+oldStart = 1
+oldFinal = 3
+nReplica = 9
+0 1
+1 5
+2 9
+0
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+1
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+2
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+box size: -100.00000000	100.00000000	-100.00000000	100.00000000	-156.15000000	156.15000000	
+timestep:   0.00100000 ps
+box size: -100.00000000	100.00000000	-100.00000000	100.00000000	-156.15000000	156.15000000	
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+Changing box ...
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+Changing box ...
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+../build_NEB_restart.py:38: RuntimeWarning: Invalid PEP 3118 format string: '&&<d'
+neb.204.1.restart
+System init for write_restart ...
+Neighbor list info ...
+  0 neighbor list requests
+  update every 1 steps, delay 10 steps, check yes
+  master list distance cutoff = 0
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.2.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 0 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 0 (0)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.3.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.4.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.5.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.6.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.7.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.8.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.204.9.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     203 2.5332804e-06            0            0 1.2332832e-05 1.0545079e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+LAMMPS (15 May 2015)
+Running on 9 partitions of processors
+Setting up regular NEB ...
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+0  4.8210324712428e-01  6.1100691219421e-02  1.5520233453118e-03  2.1579243684963e-01  4.8429034269117e-01  4.2249167153204e-01  2.5822504966345e-01  6.0591904389309e+00  0.0000000000000e+00 -1.2988727676830e+05  1.2491867388341e-01 -1.2988725523375e+05  2.4983734776682e-01 -1.2988719875679e+05  3.7475602165023e-01 -1.2988711957871e+05  4.9967469553363e-01 -1.2988702900716e+05  6.2475602165023e-01 -1.2988688924732e+05  7.4983734776682e-01 -1.2988685427663e+05  8.7491867388341e-01 -1.2988695066228e+05  1.0000000000000e+00 -1.2988711250167e+05 
+100  8.1229336405664e-02  8.9658086133402e-03  1.4368890441638e-03  1.8316430295848e-01  9.5025586035219e-02  3.3044673764380e-01  1.9219226369751e-01  6.3829969954224e+00  0.0000000000000e+00 -1.2988727677947e+05  1.2457973637512e-01 -1.2988726974940e+05  2.5021578001686e-01 -1.2988724603916e+05  3.7610452456052e-01 -1.2988718260752e+05  4.9988275412774e-01 -1.2988704087158e+05  6.2394311584226e-01 -1.2988694633273e+05  7.4815994804740e-01 -1.2988694847984e+05  8.7385689657099e-01 -1.2988702089788e+05  1.0000000000000e+00 -1.2988713852500e+05 
+200  3.4245325975192e-02  2.4947953935118e-03  1.2762481404354e-03  1.5371365311439e-01  4.7048133941967e-02  3.0502943863394e-01  1.9563675258541e-01  6.7066424763423e+00  0.0000000000000e+00 -1.2988727679989e+05  1.2385494217530e-01 -1.2988727251685e+05  2.4774010256930e-01 -1.2988725763292e+05  3.7110529988386e-01 -1.2988719470499e+05  4.9519948647330e-01 -1.2988704983371e+05  6.2030338020050e-01 -1.2988697177046e+05  7.4614843394423e-01 -1.2988698425127e+05  8.7287121526756e-01 -1.2988705650790e+05  1.0000000000000e+00 -1.2988716740721e+05 
+212  3.0770287961200e-02  2.1049904268033e-03  1.2577082324475e-03  1.5170761493117e-01  4.3424939510293e-02  3.0365028603410e-01  1.9623429684725e-01  6.7227503995101e+00  0.0000000000000e+00 -1.2988727680288e+05  1.2381868878642e-01 -1.2988727272682e+05  2.4764587768503e-01 -1.2988725840744e+05  3.7102670258641e-01 -1.2988719429721e+05  4.9519338600948e-01 -1.2988704937964e+05  6.2034304889871e-01 -1.2988697315259e+05  7.4622953810663e-01 -1.2988698658758e+05  8.7292298249712e-01 -1.2988705893459e+05  1.0000000000000e+00 -1.2988716938689e+05 
+Setting up climbing ...
+Climbing replica = 6
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+212  4.3424939510292e-02  5.4162084529563e-03  1.2577082324475e-03  1.5170761493117e-01  4.3424939510293e-02  3.0365028603410e-01  1.9623429684725e-01  6.7227503995101e+00  0.0000000000000e+00 -1.2988727680288e+05  1.2381868878642e-01 -1.2988727272682e+05  2.4764587768503e-01 -1.2988725840744e+05  3.7102670258641e-01 -1.2988719429721e+05  4.9519338600948e-01 -1.2988704937964e+05  6.2034304889871e-01 -1.2988697315259e+05  7.4622953810663e-01 -1.2988698658758e+05  8.7292298249712e-01 -1.2988705893459e+05  1.0000000000000e+00 -1.2988716938689e+05 
+succeed!
+press any key to continue ...
+nStep = 212
+oldStart = 5
+oldFinal = 7
+nReplica = 9
+0 1
+1 5
+2 9
+0
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+1
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+2
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+box size: -100.00001000	100.00001000	-100.00001000	100.00001000	-156.15000000	156.15000000	
+timestep:   0.00100000 ps
+box size: -100.00001000	100.00001000	-100.00001000	100.00001000	-156.15000000	156.15000000	
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+Changing box ...
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+Changing box ...
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+../build_NEB_restart.py:38: RuntimeWarning: Invalid PEP 3118 format string: '&&<d'
+neb.213.1.restart
+System init for write_restart ...
+Neighbor list info ...
+  0 neighbor list requests
+  update every 1 steps, delay 10 steps, check yes
+  master list distance cutoff = 0
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 1.19209e-06 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 1.19209e-06 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.2.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.3.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.4.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 0 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 0 (0)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.5.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.6.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.7.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.8.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.213.9.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     212 7.3955169e-06            0            0 3.6003779e-05 3.0784707e-06 
+Loop time of 0 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 0 (0)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+LAMMPS (15 May 2015)
+Running on 9 partitions of processors
+Setting up regular NEB ...
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+0  6.3232511914931e-02  1.0596873317771e-02  1.5574357078383e-01  6.4783709458230e-02  4.4273927876909e-02  8.0603734939359e-02  1.7811667537899e-02  1.6876533918026e+00  0.0000000000000e+00 -1.2988704937964e+05  1.2463310746653e-01 -1.2988701999168e+05  2.4926621493306e-01 -1.2988699734403e+05  3.7389932239959e-01 -1.2988698195224e+05  4.9853242986611e-01 -1.2988697315259e+05  6.2389932239958e-01 -1.2988696877591e+05  7.4926621493306e-01 -1.2988696981694e+05  8.7463310746653e-01 -1.2988697603749e+05  1.0000000000000e+00 -1.2988698658758e+05 
+100  2.6181603844764e-02  1.3569458518629e-03  1.5251491922886e-01  6.1384832719909e-02  2.6290151318309e-02  8.0106141773285e-02  1.7332152012386e-02  1.7072930454710e+00  0.0000000000000e+00 -1.2988705199698e+05  1.2475076381936e-01 -1.2988702311351e+05  2.4968301993178e-01 -1.2988700079734e+05  3.7485481547040e-01 -1.2988698511116e+05  5.0015980414835e-01 -1.2988697568435e+05  6.2524184196738e-01 -1.2988697189083e+05  7.5013092155642e-01 -1.2988697324707e+05  8.7506199046066e-01 -1.2988697920174e+05  1.0000000000000e+00 -1.2988698922299e+05 
+200  1.6783510586351e-02  5.4758754172969e-04  1.4939773497189e-01  5.6734611417854e-02  1.7355680348647e-02  7.9941994772526e-02  1.7313872245722e-02  1.7372692996117e+00  0.0000000000000e+00 -1.2988705661577e+05  1.2487886644858e-01 -1.2988702759802e+05  2.4978662483300e-01 -1.2988700527023e+05  3.7473775532214e-01 -1.2988698963685e+05  4.9973199891413e-01 -1.2988698029810e+05  6.2475495415596e-01 -1.2988697667377e+05  7.4978196154033e-01 -1.2988697811765e+05  8.7487438412371e-01 -1.2988698406474e+05  1.0000000000000e+00 -1.2988699398765e+05 
+300  1.2627975948234e-02  3.2857486424925e-04  1.4841584480822e-01  5.5095348525899e-02  1.3316339788647e-02  7.9902713710908e-02  1.7323523439700e-02  1.7487336088466e+00  0.0000000000000e+00 -1.2988705892576e+05  1.2489122608100e-01 -1.2988702985273e+05  2.4980398752850e-01 -1.2988700752337e+05  3.7475146251308e-01 -1.2988699191860e+05  4.9973845222365e-01 -1.2988698261704e+05  6.2476176246078e-01 -1.2988697902305e+05  7.4980557993592e-01 -1.2988698049089e+05  8.7489172266317e-01 -1.2988698644244e+05  1.0000000000000e+00 -1.2988699634657e+05 
+400  1.0222040517213e-02  2.2180532929940e-04  1.4797361014915e-01  5.4363947630189e-02  1.1103449792860e-02  7.9901721590431e-02  1.7324671061942e-02  1.7539781428566e+00  0.0000000000000e+00 -1.2988706019450e+05  1.2492855217794e-01 -1.2988703108617e+05  2.4987070192138e-01 -1.2988700875016e+05  3.7483520486952e-01 -1.2988699315627e+05  4.9982585988956e-01 -1.2988698387196e+05  6.2484149598440e-01 -1.2988698029278e+05  7.4987194903301e-01 -1.2988698177215e+05  8.7492895111625e-01 -1.2988698772475e+05  1.0000000000000e+00 -1.2988699761745e+05 
+409  9.9729258951678e-03  2.1433524958443e-04  1.4793245904791e-01  5.4294174310093e-02  1.0871125298782e-02  7.9901617704309e-02  1.7324708809610e-02  1.7544802663001e+00  0.0000000000000e+00 -1.2988706032477e+05  1.2493228669729e-01 -1.2988703121301e+05  2.4987742417063e-01 -1.2988700887633e+05  3.7484371930429e-01 -1.2988699328349e+05  4.9983481700344e-01 -1.2988698400086e+05  6.2484967030634e-01 -1.2988698042315e+05  7.4987863682921e-01 -1.2988698190365e+05  8.7493267802940e-01 -1.2988698785632e+05  1.0000000000000e+00 -1.2988699774786e+05 
+Setting up climbing ...
+Climbing replica = 6
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+409  1.0871125298782e-02  5.7683212008981e-04  1.4793245904791e-01  5.4294174310093e-02  1.0871125298782e-02  7.9901617704309e-02  1.7324708809610e-02  1.7544802663001e+00  0.0000000000000e+00 -1.2988706032477e+05  1.2493228669729e-01 -1.2988703121301e+05  2.4987742417063e-01 -1.2988700887633e+05  3.7484371930429e-01 -1.2988699328349e+05  4.9983481700344e-01 -1.2988698400086e+05  6.2484967030634e-01 -1.2988698042315e+05  7.4987863682921e-01 -1.2988698190365e+05  8.7493267802940e-01 -1.2988698785632e+05  1.0000000000000e+00 -1.2988699774786e+05 
+succeed!
+press any key to continue ...
+nStep = 409
+oldStart = 5
+oldFinal = 7
+nReplica = 9
+0 1
+1 5
+2 9
+0
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+1
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+2
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+box size: -100.00002000	100.00002000	-100.00002000	100.00002000	-156.15000000	156.15000000	
+timestep:   0.00100000 ps
+box size: -100.00002000	100.00002000	-100.00002000	100.00002000	-156.15000000	156.15000000	
+LAMMPS (15 May 2015)
+Reading restart file ...
+  restart file = 15 May 2015, LAMMPS = 15 May 2015
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+Changing box ...
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+Changing box ...
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+../build_NEB_restart.py:38: RuntimeWarning: Invalid PEP 3118 format string: '&&<d'
+neb.410.1.restart
+System init for write_restart ...
+Neighbor list info ...
+  0 neighbor list requests
+  update every 1 steps, delay 10 steps, check yes
+  master list distance cutoff = 0
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.2.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.3.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.4.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.5.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.6.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 9.53674e-07 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 9.53674e-07 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.7.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 0 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 0 (0)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.8.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 0 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 0 (0)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+neb.410.9.restart
+System init for write_restart ...
+WARNING: No fixes defined, atoms won't move (../verlet.cpp:55)
+Setting up run ...
+Memory usage per processor = 9.06353 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     409 0.00036323572            0            0 0.0017683495 0.0001512011 
+Loop time of 0 on 1 procs for 0 steps with 37664 atoms
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 0 (0)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+LAMMPS (15 May 2015)
+Running on 9 partitions of processors
+Setting up regular NEB ...
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+0  1.0499335282013e-02  5.7799243591600e-04  3.0546419437981e-02  2.0062447039699e-02  1.0287291196874e-02  3.6606418871088e-03  1.5634329174645e-03  4.3869694759463e-01  0.0000000000000e+00 -1.2988698400086e+05  1.2499294462668e-01 -1.2988698259381e+05  2.4998588925335e-01 -1.2988698153483e+05  3.7497883388003e-01 -1.2988698081525e+05  4.9997177850671e-01 -1.2988698042315e+05  6.2497883388003e-01 -1.2988698034021e+05  7.4998588925336e-01 -1.2988698056488e+05  8.7499294462668e-01 -1.2988698108949e+05  1.0000000000000e+00 -1.2988698190365e+05 
+100  9.4544249184211e-03  1.9763308250712e-04  3.0329079327962e-02  1.9765241264219e-02  9.5268617512284e-03  3.6598223523470e-03  1.5618342731614e-03  4.3908889301274e-01  0.0000000000000e+00 -1.2988698429159e+05  1.2498709368114e-01 -1.2988698288701e+05  2.4999110325563e-01 -1.2988698182909e+05  3.7502419062353e-01 -1.2988698110767e+05  5.0008190157737e-01 -1.2988698071245e+05  6.2508770362796e-01 -1.2988698063177e+05  7.5006762491565e-01 -1.2988698085794e+05  8.7503634379524e-01 -1.2988698138165e+05  1.0000000000000e+00 -1.2988698219360e+05 
+200  7.8980775646685e-03  1.5506498142671e-04  2.9828886007138e-02  1.9041566832455e-02  8.0125081315898e-03  3.6617822333938e-03  1.5624626248609e-03  4.4000994344278e-01  0.0000000000000e+00 -1.2988698504484e+05  1.2501979615822e-01 -1.2988698363952e+05  2.5003844148695e-01 -1.2988698258079e+05  3.7505348126896e-01 -1.2988698185856e+05  5.0006045852983e-01 -1.2988698146267e+05  6.2505079334919e-01 -1.2988698138306e+05  7.5003691344877e-01 -1.2988698160986e+05  8.7501936141088e-01 -1.2988698213377e+05  1.0000000000000e+00 -1.2988698294552e+05 
+300  6.6755816786740e-03  1.2832059949692e-04  2.9496002163856e-02  1.8545124382224e-02  6.8135362354357e-03  3.6620785685955e-03  1.5629847766832e-03  4.4061031573825e-01  0.0000000000000e+00 -1.2988698559951e+05  1.2500416411344e-01 -1.2988698419401e+05  2.5000767538660e-01 -1.2988698313519e+05  3.7500963641006e-01 -1.2988698241286e+05  5.0000894458880e-01 -1.2988698201694e+05  6.2500374922505e-01 -1.2988698193743e+05  7.5000170552600e-01 -1.2988698216441e+05  8.7500059261367e-01 -1.2988698268849e+05  1.0000000000000e+00 -1.2988698350041e+05 
+400  5.7028625591148e-03  1.0897554777300e-04  2.9267985494435e-02  1.8200081961450e-02  5.8643612139581e-03  3.6623897613026e-03  1.5630394045729e-03  4.4103466647412e-01  0.0000000000000e+00 -1.2988698601011e+05  1.2500250248793e-01 -1.2988698460444e+05  2.5000438024676e-01 -1.2988698354550e+05  3.7500500510307e-01 -1.2988698282314e+05  5.0000384737863e-01 -1.2988698242721e+05  6.2500009191998e-01 -1.2988698234772e+05  7.4999923054248e-01 -1.2988698257474e+05  8.7499934335292e-01 -1.2988698309885e+05  1.0000000000000e+00 -1.2988698391076e+05 
+500  4.9068282972303e-03  9.1718933604979e-05  2.9105360684446e-02  1.7953137983654e-02  5.0934903265610e-03  3.6626131040975e-03  1.5630664711352e-03  4.4135516890417e-01  0.0000000000000e+00 -1.2988698632536e+05  1.2500293446958e-01 -1.2988698491957e+05  2.5000462537939e-01 -1.2988698386056e+05  3.7500444834640e-01 -1.2988698313817e+05  5.0000250126016e-01 -1.2988698274224e+05  6.2499889171400e-01 -1.2988698266275e+05  7.4999806159640e-01 -1.2988698288980e+05  8.7499861745254e-01 -1.2988698341393e+05  1.0000000000000e+00 -1.2988698422581e+05 
+600  4.2622501822744e-03  7.6855741341903e-05  2.8989948579041e-02  1.7777470851204e-02  4.4756043038518e-03  3.6627896915888e-03  1.5630656271242e-03  4.4159784843814e-01  0.0000000000000e+00 -1.2988698656808e+05  1.2500752043166e-01 -1.2988698516215e+05  2.5000932473709e-01 -1.2988698410311e+05  3.7500740490197e-01 -1.2988698338072e+05  5.0000432580206e-01 -1.2988698298478e+05  6.2500065946899e-01 -1.2988698290529e+05  7.4999940825605e-01 -1.2988698313236e+05  8.7499933112844e-01 -1.2988698365651e+05  1.0000000000000e+00 -1.2988698446836e+05 
+700  3.7907410200823e-03  6.5484316022154e-05  2.8914206401783e-02  1.7663250172772e-02  4.0289114704639e-03  3.6627412337111e-03  1.5630869020242e-03  4.4175929921920e-01  0.0000000000000e+00 -1.2988698673980e+05  1.2499925168967e-01 -1.2988698533393e+05  2.4999857508022e-01 -1.2988698427489e+05  3.7499795718102e-01 -1.2988698355248e+05  4.9999729298485e-01 -1.2988698315654e+05  6.2499623367718e-01 -1.2988698307705e+05  7.4999689396583e-01 -1.2988698330415e+05  8.7499826195228e-01 -1.2988698382829e+05  1.0000000000000e+00 -1.2988698464014e+05 
+800  3.4179074771573e-03  5.6188663111590e-05  2.8860661047109e-02  1.7581745132636e-02  3.6801273460034e-03  3.6628442903748e-03  1.5630937996320e-03  4.4188524774734e-01  0.0000000000000e+00 -1.2988698687369e+05  1.2499967840964e-01 -1.2988698546775e+05  2.4999936635350e-01 -1.2988698440869e+05  3.7499901921583e-01 -1.2988698368625e+05  4.9999853891933e-01 -1.2988698329033e+05  6.2499765779063e-01 -1.2988698321084e+05  7.4999802218863e-01 -1.2988698343796e+05  8.7499888080109e-01 -1.2988698396210e+05  1.0000000000000e+00 -1.2988698477394e+05 
+900  3.1018259359817e-03  4.8094530306384e-05  2.8819331112851e-02  1.7518887855299e-02  3.3884901716255e-03  3.6629072128562e-03  1.5631109854439e-03  4.4198536876050e-01  0.0000000000000e+00 -1.2988698698704e+05  1.2500033218351e-01 -1.2988698558106e+05  2.5000055149873e-01 -1.2988698452196e+05  3.7500054198150e-01 -1.2988698379953e+05  5.0000020404070e-01 -1.2988698340359e+05  6.2499936037364e-01 -1.2988698332413e+05  7.4999932017486e-01 -1.2988698355125e+05  8.7499957726039e-01 -1.2988698407540e+05  1.0000000000000e+00 -1.2988698488724e+05 
+934  2.9982297598899e-03  4.5399693060823e-05  2.8806446027189e-02  1.7499562027001e-02  3.2938912351691e-03  3.6628862872021e-03  1.5631242131349e-03  4.4201500933125e-01  0.0000000000000e+00 -1.2988698702438e+05  1.2499978054154e-01 -1.2988698561841e+05  2.4999956744096e-01 -1.2988698455931e+05  3.7499932990984e-01 -1.2988698383688e+05  4.9999899976607e-01 -1.2988698344095e+05  6.2499839212520e-01 -1.2988698336149e+05  7.4999863609506e-01 -1.2988698358862e+05  8.7499922601417e-01 -1.2988698411278e+05  1.0000000000000e+00 -1.2988698492462e+05 
+Setting up climbing ...
+Climbing replica = 6
+Step MaxReplicaForce MaxAtomForce GradV0 GradV1 GradVc EBF EBR RDT RD1 PE1 RD2 PE2 ... RDN PEN
+934  3.2938912351691e-03  2.3142612704845e-04  2.8806446027189e-02  1.7499562027001e-02  3.2938912351691e-03  3.6628862872021e-03  1.5631242131349e-03  4.4201500933125e-01  0.0000000000000e+00 -1.2988698702438e+05  1.2499978054154e-01 -1.2988698561841e+05  2.4999956744096e-01 -1.2988698455931e+05  3.7499932990984e-01 -1.2988698383688e+05  4.9999899976607e-01 -1.2988698344095e+05  6.2499839212520e-01 -1.2988698336149e+05  7.4999863609506e-01 -1.2988698358862e+05  8.7499922601417e-01 -1.2988698411278e+05  1.0000000000000e+00 -1.2988698492462e+05 
+1034  3.0929397159968e-03  1.7900103367343e-04  2.8797588295833e-02  1.7486333857250e-02  3.0929397159968e-03  3.6671004781965e-03  1.5673635643907e-03  4.4203523941075e-01  0.0000000000000e+00 -1.2988698705087e+05  1.2471800738499e-01 -1.2988698564767e+05  2.4918470274289e-01 -1.2988698459162e+05  3.7305558373528e-01 -1.2988698387210e+05  4.9583987995574e-01 -1.2988698347549e+05  6.1693119115397e-01 -1.2988698338377e+05  7.4593906566573e-01 -1.2988698360304e+05  8.7336692929277e-01 -1.2988698413058e+05  1.0000000000000e+00 -1.2988698495114e+05 
+1061  2.9983662516857e-03  1.5351888703539e-04  2.8792351015759e-02  1.7478597986694e-02  2.9983662516857e-03  3.6686958628707e-03  1.5689618012402e-03  4.4204740659745e-01  0.0000000000000e+00 -1.2988698706681e+05  1.2412147500812e-01 -1.2988698566949e+05  2.4788065708447e-01 -1.2988698461688e+05  3.7088854165675e-01 -1.2988698389783e+05  4.9272862406422e-01 -1.2988698349767e+05  6.1299761454898e-01 -1.2988698339812e+05  7.4314101495861e-01 -1.2988698361084e+05  8.7192561615112e-01 -1.2988698413887e+05  1.0000000000000e+00 -1.2988698496708e+05 
+succeed!
+press any key to continue ...
+######################################################
+# nProc   = 9
+# pDir    = N9
+# EXEC1   = /home/zhangjiayong/software/lammps-15May15/lmp_15May15
+# inFile1 = neb.lmp
+# EXEC2   = /home/zhangjiayong/software/lammps-15May15/lmp_15May15_freeEnd_paper
+# inFile2 = neb2.lmp
+# nLevel  = 4
+# ftol1   = 0.100000
+# ftol2   = 0.003000
+# etol    = 0.002000
+#   -var metal Cu
+######################################################
+ftol[0] = 0.100
+ftol[1] = 0.031
+ftol[2] = 0.010
+ftol[3] = 0.003
+/data_sda/zhangjiayong/workspace/disNucleation_FFT_torsion3/N9_e0.100
+mpirun -n 9 /home/zhangjiayong/software/lammps-15May15/lmp_15May15           -partition 9x1             -in neb.lmp     -var metal Cu                 -var climbStep 0           -var ftol 0.100
+python ../draw_engBarrier_LastLine_ubuntu.pyc
+python ../build_NEB_restart.pyc 203 1 3 9
+/data_sda/zhangjiayong/workspace/disNucleation_FFT_torsion3
+/data_sda/zhangjiayong/workspace/disNucleation_FFT_torsion3/N9_e0.100_res1to3_e0.031
+mpirun -n 9 /home/zhangjiayong/software/lammps-15May15/lmp_15May15_freeEnd_paper           -partition 9x1             -in neb2.lmp     -var metal Cu                 -var nStep 204               -var climbStep 0           -var ftol  0.031
+python ../draw_engBarrier_LastLine_ubuntu.pyc
+python ../build_NEB_restart.pyc 212 5 7 9
+/data_sda/zhangjiayong/workspace/disNucleation_FFT_torsion3
+/data_sda/zhangjiayong/workspace/disNucleation_FFT_torsion3/N9_e0.100_res1to3_e0.031_res5to7_e0.010
+mpirun -n 9 /home/zhangjiayong/software/lammps-15May15/lmp_15May15_freeEnd_paper           -partition 9x1             -in neb2.lmp     -var metal Cu                 -var nStep 213               -var climbStep 0           -var ftol  0.010
+python ../draw_engBarrier_LastLine_ubuntu.pyc
+python ../build_NEB_restart.pyc 409 5 7 9
+/data_sda/zhangjiayong/workspace/disNucleation_FFT_torsion3
+/data_sda/zhangjiayong/workspace/disNucleation_FFT_torsion3/N9_e0.100_res1to3_e0.031_res5to7_e0.010_res5to7_e0.003
+mpirun -n 9 /home/zhangjiayong/software/lammps-15May15/lmp_15May15_freeEnd_paper           -partition 9x1             -in neb2.lmp     -var metal Cu                 -var nStep 410               -var climbStep 400000           -var ftol  0.003
+python ../draw_engBarrier_LastLine_ubuntu.pyc
+######################################################
+# newDir: N9_e0.100_res1to3_e0.031_res5to7_e0.010_res5to7_e0.003
+# pDir: N9_e0.100_res1to3_e0.031_res5to7_e0.010
+# iLevel: 3
+# iTrial: 0
+# nStep: 410
+# resStart: 5
+# resEnd: 7
+# steps[0]: 203
+# steps[1]: 212
+# steps[2]: 409
+# steps[3]: 1061
+######################################################

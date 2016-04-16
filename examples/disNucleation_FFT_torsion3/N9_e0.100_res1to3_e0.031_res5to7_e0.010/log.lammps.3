@@ -1,0 +1,200 @@
+LAMMPS (15 May 2015)
+Processor partition = 3
+#log         log.neb.lammps
+#--------------------------------------------------------------------------------------------------------------------------
+# create FCC structure   - copper
+# box axis ox: [ 0 -1  1]
+# box axis oy: [ 1  1  1]
+# box axis oz: [-2  1  1]
+#       |y1 [-1 -1  1]
+#       |
+#       |
+#       |____________ x1 [ 1  1  2]
+#      /o
+#     /
+#    /
+#   /z1 [ 1 -1 0]
+
+variable    lattice_type index fcc
+variable    lattice_atom equal 4
+#variable    lattice_cons equal 3.615
+if   "${metal} == Al99" then "variable  lattice_cons equal 4.05 " elif "${metal} == Al03"      "variable  lattice_cons equal 4.05 " elif "${metal} == Ni"        "variable  lattice_cons equal 3.52 " elif "${metal} == Cu"        "variable  lattice_cons equal 3.615" elif "${metal} == Ag"        "variable  lattice_cons equal 4.09 " elif "${metal} == Au"        "variable  lattice_cons equal 4.08 " else "print '------- This is nothing ----'"   "quit"
+variable  lattice_cons equal 3.615
+print '------- This is ${metal} ---------'
+------- This is Cu ---------
+
+variable    cell_volume  equal ${lattice_cons}^3
+variable    cell_volume  equal 3.615^3
+variable    atom_volume  equal ${cell_volume}/${lattice_atom}*10000 # 10000 是为了使得最终的应力结果以GPa为单位而引入的参数
+variable    atom_volume  equal 47.241633375/${lattice_atom}*10000 
+variable    atom_volume  equal 47.241633375/4*10000 
+                                                                    # metal units 中, 应力单位为bar
+
+variable        timestep    equal 0.002
+variable        u  uloop 480
+
+atom_modify     map array sort 0 0.0    # build mapping and turn off sorting
+
+variable        nStep   index 5064
+read_restart    ./res/neb.${nStep}.$u.restart
+read_restart    ./res/neb.213.$u.restart
+read_restart    ./res/neb.213.4.restart
+  orthogonal box = (-100 -100 -156.15) to (100 100 156.15)
+  1 by 1 by 1 MPI processor grid
+  37664 atoms
+reset_timestep  0
+# -------- potentials & neighbor -------
+pair_style      eam/alloy
+#pair_coeff      * * Cu_mishin1.eam.alloy Cu
+if   "${metal} == Al99" then "pair_coeff  * * ../potentials/Al99.eam.alloy Al" elif "${metal} == Al03"      "pair_coeff  * * ../potentials/Al03.eam.alloy Al" elif "${metal} == Ni"        "pair_coeff  * * ../potentials/Ni99.eam.alloy Ni" elif "${metal} == Cu"        "pair_coeff  * * ../potentials/Cu_mishin1.eam.alloy Cu" elif "${metal} == Ag"        "pair_coeff  * * ../potentials/Ag.eam.alloy Ag" elif "${metal} == Au"        "pair_coeff  * * ../potentials/Au-Grochola-JCP05.eam.alloy Au" else "quit"
+pair_coeff  * * ../potentials/Cu_mishin1.eam.alloy Cu
+
+neighbor        1.0 bin
+neigh_modify    every 1 delay 5 check yes
+# --------------------------------------
+
+# ----------------------- 定义统计量 ---------------------------------
+compute         atomStress all stress/atom NULL
+compute         atomPE all pe/atom
+#---------- 每个原子的应力 -------------
+variable        peratom_sxx atom c_atomStress[1]/${atom_volume}
+variable        peratom_sxx atom c_atomStress[1]/118104.0834375
+variable        peratom_syy atom c_atomStress[2]/${atom_volume}
+variable        peratom_syy atom c_atomStress[2]/118104.0834375
+variable        peratom_szz atom c_atomStress[3]/${atom_volume}
+variable        peratom_szz atom c_atomStress[3]/118104.0834375
+variable        peratom_sxy atom c_atomStress[4]/${atom_volume}
+variable        peratom_sxy atom c_atomStress[4]/118104.0834375
+variable        peratom_sxz atom c_atomStress[5]/${atom_volume}
+variable        peratom_sxz atom c_atomStress[5]/118104.0834375
+variable        peratom_syz atom c_atomStress[6]/${atom_volume}
+variable        peratom_syz atom c_atomStress[6]/118104.0834375
+#----------- all的体积 --------------
+variable        p_natom equal count(all)
+variable        entityVol equal ${atom_volume}*${p_natom}
+variable        entityVol equal 118104.0834375*${p_natom}
+variable        entityVol equal 118104.0834375*37664
+#----------- all的应力 --------------
+compute         sxx0 all  reduce sum c_atomStress[1]
+compute         syy0 all  reduce sum c_atomStress[2]
+compute         szz0 all  reduce sum c_atomStress[3]
+compute         sxy0 all  reduce sum c_atomStress[4]
+compute         sxz0 all  reduce sum c_atomStress[5]
+compute         syz0 all  reduce sum c_atomStress[6]
+variable        sxx equal c_sxx0/${entityVol}
+variable        sxx equal c_sxx0/4448272198.59
+variable        syy equal c_syy0/${entityVol}
+variable        syy equal c_syy0/4448272198.59
+variable        szz equal c_szz0/${entityVol}
+variable        szz equal c_szz0/4448272198.59
+variable        sxy equal c_sxy0/${entityVol}
+variable        sxy equal c_sxy0/4448272198.59
+variable        sxz equal c_sxz0/${entityVol}
+variable        sxz equal c_sxz0/4448272198.59
+variable        syz equal c_syz0/${entityVol}
+variable        syz equal c_syz0/4448272198.59
+# --------------------------------------------------------------------
+
+thermo          100
+thermo_style    custom step etotal pe ke temp press v_sxx v_syy v_szz v_sxy v_sxz v_syz
+thermo_modify   format float %25.18g
+
+reset_timestep  0
+timestep        ${timestep}
+timestep        0.002
+
+dump            1 all custom 5000 neb.*.$u.lammpstrj id x y z v_peratom_sxx v_peratom_syy v_peratom_szz v_peratom_sxy v_peratom_sxz v_peratom_syz c_atomPE
+dump            1 all custom 5000 neb.*.4.lammpstrj id x y z v_peratom_sxx v_peratom_syy v_peratom_szz v_peratom_sxy v_peratom_sxz v_peratom_syz c_atomPE
+dump_modify     1 sort id
+restart         5000 neb.*.$u.restart
+restart         5000 neb.*.4.restart
+
+fix             1 boundary setforce 0 0 0
+variable        kspring     index 1.0
+fix             2 mobile neb ${kspring}
+fix             2 mobile neb 1.0
+
+min_style       quickmin
+variable        etol    index 0.0
+variable        ftol    index 0.01
+variable        nudgeStep index 400000
+variable        climbStep index 400000
+neb             ${etol} ${ftol} ${nudgeStep} ${climbStep} 100 none
+neb             0.0 ${ftol} ${nudgeStep} ${climbStep} 100 none
+neb             0.0 0.010 ${nudgeStep} ${climbStep} 100 none
+neb             0.0 0.010 400000 ${climbStep} 100 none
+neb             0.0 0.010 400000 0 100 none
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Neighbor list info ...
+  1 neighbor list requests
+  update every 1 steps, delay 0 steps, check yes
+  master list distance cutoff = 6.50679
+Memory usage per processor = 25.009 Mbytes
+Step TotEng PotEng KinEng Temp Press sxx syy szz sxy sxz syz 
+       0       -129886.98195223829       -129886.98195223829                         0                         0      -107.595109292402626    -0.0893050565531433443     -0.093549146694395055       1.08932659268766097    0.00360811674297009232    -0.0018985745250902021   -0.00125401989813411319 
+     100      -129886.982131062774      -129886.985111163711    0.00298010092993473714   0.000612140937012731678      -107.632131238841623    -0.0892324915491530118    -0.0933750635586772099       1.08939184880151618    0.00339731007425509313   -0.00167781907738397281   -0.00117818829904914259 
+     200      -129886.988558562283      -129886.989636852682     0.0010782903949490654   0.000221491052905515049      -107.713091406252403    -0.0891367737937569654    -0.0929758281304396417       1.08957897268333315    0.00275933356707877293   -0.00132833864188624065  -0.000952666260911879791 
+     300      -129886.988494193851      -129886.991918596526    0.00342440266928051252   0.000703404719493234986       -107.76238316189891    -0.0891545235619961435    -0.0926539858634992802       1.08969015570982286    0.00228031618777560377   -0.00112377953431908517  -0.000731704652748433118 
+     400      -129886.991516661641      -129886.993156270692    0.00163960905422855024   0.000336791218279980701      -107.788134378456874    -0.0892256550194435311     -0.092420817024929991       1.08974506840161212    0.00195498585674972608  -0.000992014854897649246  -0.000542998563657050228 
+     409      -129886.991512956301      -129886.993283491494    0.00177053519353617835    0.00036368468648106814      -107.790567037974043    -0.0892372692603763534    -0.0923936379010798919       1.08974999830418362    0.00191821865928163879  -0.000976955553549636304  -0.000519308458498310833 
+Loop time of 41.4996 on 1 procs for 409 steps with 37664 atoms
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -129886.981952     -129886.993269     -129886.993283
+  Force two-norm initial, final = 0.0539935 0.00997061
+  Force max component initial, final = 0.00847752 0.000213426
+  Final line search alpha, max atom move = 0 0
+  Iterations, force evaluations = 409 409
+
+Pair  time (%) = 38.667 (93.1744)
+Neigh time (%) = 0.0723028 (0.174225)
+Comm  time (%) = 0.00159049 (0.00383254)
+Outpt time (%) = 0.0144303 (0.0347721)
+Other time (%) = 2.74428 (6.61279)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    1.523e+06 ave 1.523e+06 max 1.523e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1522995
+Ave neighs/atom = 40.4364
+Neighbor list builds = 1
+Dangerous builds = 0
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Memory usage per processor = 25.009 Mbytes
+Step TotEng PotEng KinEng Temp Press sxx syy szz sxy sxz syz 
+     409      -129886.993283491494      -129886.993283491494                         0                         0      -107.790718425995451     -0.089236990517852624    -0.0923931746544205124       1.08975053173600633    0.00191825799509625955  -0.000977119002719390286  -0.000519147668848554092 
+Loop time of 5.00679e-06 on 1 procs for 0 steps with 37664 atoms
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -129886.993283     -129886.993269     -129886.993283
+  Force two-norm initial, final = 0.00997061 0.00997061
+  Force max component initial, final = 0.000213426 0.000213426
+  Final line search alpha, max atom move = 0 0
+  Iterations, force evaluations = 0 0
+
+Pair  time (%) = 0 (0)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0 (0)
+Outpt time (%) = 0 (0)
+Other time (%) = 5.00679e-06 (100)
+
+Nlocal:    37664 ave 37664 max 37664 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    0 ave 0 max 0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    1.523e+06 ave 1.523e+06 max 1.523e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1522995
+Ave neighs/atom = 40.4364
+Neighbor list builds = 0
+Dangerous builds = 0
+
