@@ -165,8 +165,8 @@ while 1:
     #
     # -------- plot the results --------
     #
-    cmd = 'python ../draw_engBarrier_LastLine_ubuntu.pyc';
-    if executeCheck(cmd): onExit(newDir,pDir,iLevel,iTrial,nStep,resStart,resEnd,steps)
+    # cmd = 'python ../draw_engBarrier_LastLine_ubuntu.pyc';
+    # if executeCheck(cmd): onExit(newDir,pDir,iLevel,iTrial,nStep,resStart,resEnd,steps)
     #
     # -------- check the results --------
     #
