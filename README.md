@@ -18,9 +18,9 @@ usage:
 
 input of FEANEB.XXX.py
     1) integer, nProc,    the number of processers (also the number of images) used in the simulation
-    2) string,  pDir,     the path of necessary files with exactly the following name:
-                          confInitial.restart        -  a restart file of the starting state of the transition process
-		          configuration.final.need   -  the configuration of the ending state of the transition process
+    2) string,  pDir,     the path of necessary files with exactly the following names:
+                          confInitial.restart        -  restart file of the starting state of the transition process
+		          configuration.final.need   -  configuration of the ending state of the transition process
     3) string,  EXEC1,	  LAMMPS executable file used in the first level of the recursion
     4) string,  inFile1,  LAMMPS input file used in the first level of the recursions
     5) string,  EXEC2,    LAMMPS executable file used in the following level of the recursion
