@@ -11,7 +11,7 @@ platform:
 
     3) LAMMPS 15May15, with the package 'python' installed, 
                        dynamic library that can be called within python scropt
-		       other packages that are necessary to your simulation
+                       other packages that are necessary to your simulation
 
 usage:
 
@@ -29,7 +29,7 @@ input of FEANEB.XXX.py
                           confInitial.restart        -  restart file of the starting state of the transition process
                           configuration.final.need   -  configuration of the ending state of the transition process
 
-    3) string,  EXEC1,	  LAMMPS executable file used in the first level of the recursion
+    3) string,  EXEC1,    LAMMPS executable file used in the first level of the recursion
 
     4) string,  inFile1,  LAMMPS input file used in the first level of the recursion
 
@@ -44,7 +44,8 @@ input of FEANEB.XXX.py
     9) float,   ftol2,    force tolerance in the final level of the recursion
 
     10) float,   etol,    energy tolerance: 
-                          if the energy difference between the highest energy image and its two neighbours is below this value, no further refinement of the elastic band is performed.
+                          if the energy difference between the highest energy image and its two neighbours is below this
+                          value, no further refinement of the elastic band is performed.
 
     11) string, varName,  name of optional variable when calling LAMMPS
 
@@ -56,6 +57,7 @@ output:
 
     e.g. 'pDir_res1to3_e0.03' 
     
-    indicating that the calculation in the directory is restarted from the 1st to the 3rd configuration in the former level, and the force tolerance in the current level is 0.03
+    indicating that the calculation in the directory is restarted from the 1st to the 3rd configuration in the former level, 
+    and the force tolerance in the current level is 0.03
 
 
