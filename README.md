@@ -31,13 +31,13 @@ input of FEANEB.XXX.py
 
     3) string,  EXEC1,	  LAMMPS executable file used in the first level of the recursion
 
-    4) string,  inFile1,  LAMMPS input file used in the first level of the recursions
+    4) string,  inFile1,  LAMMPS input file used in the first level of the recursion
 
-    5) string,  EXEC2,    LAMMPS executable file used in the following level of the recursion
+    5) string,  EXEC2,    LAMMPS executable file used in the following level of the recursions
 
     6) string,  inFile2,  LAMMPS input file used in the following level of the recursions
 
-    7) integer, nLevel,   number of levels of the recursion
+    7) integer, nLevel,   number of levels of the recursions
 
     8) float,   ftol1,    force tolerance in the first level of the recursion
 
