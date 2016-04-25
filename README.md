@@ -51,7 +51,6 @@ input of FEANEB.XXX.py
 
     12) string,  varValue, value of optional variable when calling LAMMPS
 
-
 output:
 
    a serious of directories named as 
