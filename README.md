@@ -27,7 +27,7 @@ input of FEANEB.XXX.py
 
     2) string,  pDir,     the path of necessary files with exactly the following names:
                           confInitial.restart        -  restart file of the starting state of the transition process
-		          configuration.final.need   -  configuration of the ending state of the transition process
+                          configuration.final.need   -  configuration of the ending state of the transition process
 
     3) string,  EXEC1,	  LAMMPS executable file used in the first level of the recursion
 
@@ -44,8 +44,7 @@ input of FEANEB.XXX.py
     9) float,   ftol2,    force tolerance in the final level of the recursion
 
     10) float,   etol,    energy tolerance: 
-                          if the energy difference between the highest energy image and its two neighbours is below this
-			  value, no further refinement of the elastic band is performed.
+                          if the energy difference between the highest energy image and its two neighbours is below this value, no further refinement of the elastic band is performed.
 
     11) string, varName,  name of optional variable when calling LAMMPS
 
