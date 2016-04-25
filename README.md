@@ -21,7 +21,6 @@ usage:
        (a bash script named 'lmprun.sh' is given in the example)
 
 input of FEANEB.XXX.py
-
     1) integer, nProc,    the number of processers (also the number of images) used in the simulation
 
     2) string,  pDir,     the path of necessary files with exactly the following names:
@@ -42,13 +41,13 @@ input of FEANEB.XXX.py
 
     9) float,   ftol2,    force tolerance in the final level of the recursion
 
-   10) float,   etol,     energy tolerance: 
+    10) float,   etol,     energy tolerance: 
                           if the energy difference between the highest energy image and its two neighbours is below this
 			  value, no further refinement of the elastic band is performed.
 
-   11) string,  varName,  name of optional variable when calling LAMMPS
+    11) string,  varName,  name of optional variable when calling LAMMPS
 
-   12) string,  varValue, value of optional variable when calling LAMMPS
+    12) string,  varValue, value of optional variable when calling LAMMPS
 
 
 output:
