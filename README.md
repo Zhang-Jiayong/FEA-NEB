@@ -55,7 +55,8 @@ output:
 
     a serious of directories named as 
 
-    e.g. 'pDir_res1to3_e0.03' indicating that the calculation in the directory is restarted from the 1st to the 3rd 
-         configuration in the former level, and the force tolerance in the current level is 0.03
+    e.g. 'pDir_res1to3_e0.03' 
+    
+    indicating that the calculation in the directory is restarted from the 1st to the 3rd configuration in the former level, and the force tolerance in the current level is 0.03
 
 
