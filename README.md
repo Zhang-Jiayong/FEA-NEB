@@ -4,6 +4,7 @@ Free-end adaptive nudged elastic band method for locating transition states in m
 
 
 platform: 
+
     1) Ubuntu 12.04/14.04
 
     2) python 2.7.x, with the package 'numpy' installed
@@ -21,6 +22,7 @@ usage:
        (a bash script named 'lmprun.sh' is given in the example)
 
 input of FEANEB.XXX.py
+
     1) integer, nProc,    the number of processers (also the number of images) used in the simulation
 
     2) string,  pDir,     the path of necessary files with exactly the following names:
