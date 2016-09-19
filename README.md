@@ -20,7 +20,7 @@ usage:
     1) replace the original file 'fix_neb.cpp' with the modified one when compiling LAMMPS
        (the free-end algorithm is implemented in this file)
 
-    2) run the script 'FEANEB.XXX.py' with necessary parameters from the bash terminal
+    2) from the bash terminal, run the script 'FEANEB.XXX.py' with necessary parameters
        (a bash script named 'lmprun.sh' is given in the example)
 
 input of FEANEB.XXX.py
