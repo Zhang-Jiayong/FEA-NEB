@@ -1,10 +1,12 @@
 # how to get the MEP/SDP
 
-After the transition state is captured, the MEP can be tracked by calculating the Steepest Descent Path (SDP) from the transition path.
+After the transition state is captured, the MEP can be tracked by calculating the Steepest Descent Path (SDP) from the transition state.
 
 The script 'SDP_calc.lmp' can be used to get the SDP.
 
 It is easy to learn to use 'SDP_calc.lmp' if you are familiar to Lammps. Just see the bash script 'lmprun.sh'
+
+######
 
 I would to say something about how this script works:
 
@@ -33,4 +35,6 @@ However, these data is 'hidden' in the log-file, and it is a annoying work to pi
 So I provide a python script 'extract_SDP_redump.py' to do this job.
 
 put the 'log.SDP.lammps' and 'extract_SDP_redump.py' in the same folder, and double-click the 'extract_SDP_redump.py', and the data will be extracted automatically.
+
+######
 
