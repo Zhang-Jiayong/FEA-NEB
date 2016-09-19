@@ -1,0 +1,14 @@
+build_NEB_restart.pyc is a python script used to build new configuration files from old ones by interpolation.
+
+usage: build_NEB_restart.pyc nStep iStart iEnd nReplica
+        nStep  : an indentifier in the old restart files
+        iStart : indentifier of the starting restart file in the interpolation
+        iEnd   : indentifier of the ending restart file in the interpolation
+        nReplica : number of new restart files generated
+        this will read the following restart files:
+            neb.${nStep}.${iStart}.restart
+	    neb.${nStep}.${iStart+1}.restart
+	    ...
+            neb.${nStep}.${iEnd}.restart
+	and generate ${nReplica} new restart files in the folder ${iStart}to${iEnd}
+
