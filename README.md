@@ -17,7 +17,7 @@ platform:
 
 usage:
 
-    1) replace the file 'fix_neb.cpp' with the original one when compiling LAMMPS
+    1) replace the original file 'fix_neb.cpp' with the modified one when compiling LAMMPS
        (the free-end algorithm is implemented in this file)
 
     2) run the script 'FEANEB.XXX.py' with necessary parameters from the bash terminal
