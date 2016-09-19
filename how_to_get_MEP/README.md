@@ -24,7 +24,7 @@ global coordinate | recorded distance | recorded energy
      0.21       0.11      99.8
      0.30       0.09      99.7   
 
-the recirded data is:
+the recorded data is:
 
 1) the distance between neighboring points on the SDP
 
