@@ -37,3 +37,14 @@ put the 'log.SDP.lammps' and 'extract_SDP_redump.py' in the same folder, and dou
 
 ######
 
+From the calculated transiton state, we can only get one side of the MEP, that's to say, tha portion from the transiton state to the reactant/initial-state OR the product/final-state.
+
+That's is because the calculated transition state is slightly away from the real transition state and is is on one side of the ridge of the Potential Energy Surface (PES).
+
+The strategy to get the whole MEP is rather straight-forward:
+
+In the last level of recursion in the FEA-NEB calculation, the two neighbors of the transition state is certainly on two different sides of the ridge of the PES.
+
+Starting these two replicas, two halves of the MEP can be calculated, and some more work is needed to join them together, and it is easy.
+
+Good Luck!
