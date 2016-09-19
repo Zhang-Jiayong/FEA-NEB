@@ -12,3 +12,8 @@ usage: build_NEB_restart.pyc nStep iStart iEnd nReplica
             neb.${nStep}.${iEnd}.restart
 	and generate ${nReplica} new restart files in the folder ${iStart}to${iEnd}
 
+note: 1) The pair_style and pair_coeff may be needed when writing restart files depending on the potential used.
+         These parameter can be specified in the file 'potential.lmp_mod'
+      2) Use the build_NEB_restart.pyc file in this folder.
+         The file with the same name in the 'examples' folder is not assured in your case.
+      
