@@ -1,0 +1,2 @@
+pair_style     lcbop
+pair_coeff     * * ../potentials/C.lcbop C
