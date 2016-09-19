@@ -16,8 +16,8 @@ Every 20 steps, the potential energy of the configuration is recorded, and the d
 
 so the recorded data is in the following style:
 
-#--------------------------------
 global coordinate | recorded distance | recorded energy
+#--------------------------------
      0          0        100.0
      0.1        0.1       99.9
      0.21       0.11      99.8
